@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[80]:
+# In[5]:
 
 
 import random
 import json
 import math
+import time
 
 A = [random.randint(0, 100000) for i in range(1, 50)]
 with open('array50.txt', 'w') as af:
@@ -21,7 +22,7 @@ with open('array500.txt', 'w') as af:
     json.dump(A, af)
 
 
-# In[81]:
+# In[6]:
 
 
 def bubble_sort(ar):
@@ -71,7 +72,7 @@ tm = time.clock() - tm
 print(' Время выполнения сортировки Шелла: ' + str(tm))
 
 
-# In[84]:
+# In[7]:
 
 
 with open('array200.txt', 'r') as af:
@@ -92,7 +93,7 @@ tm = time.clock() - tm
 print(' Время выполнения сортировки Шелла: ' + str(tm))
 
 
-# In[83]:
+# In[8]:
 
 
 with open('array500.txt', 'r') as af:
@@ -111,6 +112,12 @@ sa = shellSort(sa)
 tm = time.clock() - tm
 
 print(' Время выполнения сортировки Шелла: ' + str(tm))
+
+
+# In[ ]:
+
+
+
 
 
 # In[ ]:
